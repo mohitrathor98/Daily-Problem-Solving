@@ -34,3 +34,18 @@ public:
         return match_index;
     }
 };
+
+// Python Code: -- efficient than above
+// class Solution:
+//     def strStr(self, haystack: str, needle: str) -> int:
+//         n = len(needle)
+//         h = len(haystack)
+//         i = 0
+//         if needle == haystack:
+//             return 0
+//         while ((h-i) >= n):
+//             if haystack[i:i+n] == needle:
+//                 return i
+//             i += 1
+//         return -1 
+        
